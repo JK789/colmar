@@ -1,0 +1,40 @@
+html {
+
+}
+
+header {
+  height: 64px;
+  display: flex;
+}
+
+.logo {
+  flex-grow: 1;
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo-file {
+  padding-left: 24px;
+}
+
+.logo-file img {
+  height: 50px;
+}
+
+#company-name {
+font-size: 32px;
+}
+
+#colmar {
+  font-weight: bold;
+}
+
+#academy {
+  color: lightgrey;
+}
+
+nav ul{
+  list-style-type: none;
+  display: inline-flex;
+  padding-right: 24px;
+}
