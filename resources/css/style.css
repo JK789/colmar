@@ -149,3 +149,68 @@ h2 {
 .practice-info-text h2, span {
   padding-bottom: 8px;
 }
+
+.quote {
+  font-size: 0.8rem;
+}
+
+/* Start Learning Section */
+
+.start-learning-container {
+  width: 100%;
+  background-color: lightgrey;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.heading {
+  display: block;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.courses-container {
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+justify-content: center;
+}
+
+.individual-course-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  width: 27%;
+  height: 20rem;
+  margin-right: 2rem;
+  margin-bottom: 2.5rem;
+  transition: border 0.75s linear 0;
+}
+
+.individual-course-container:hover {
+  border: 1px solid lightblue;
+  box-shadow: 2px 2px 2px #888888;
+}
+
+.individual-course-container h2 {
+  padding-top: 1rem;
+}
+
+.individual-course-container h2, span {
+  padding-left: 1rem;
+}
+
+.course-image {
+  width: 100%;
+}
+
+.courses {
+  text-transform: uppercase;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.course-info {
+  padding-bottom: 1.5rem;
+}
