@@ -1,6 +1,10 @@
 html {
-
+font-size: 16px;
+font-family: "Helvetica", sans-serif;
+line-height: 1.4;
 }
+
+/* Header */
 
 header {
   height: 64px;
@@ -23,6 +27,7 @@ header {
 
 #company-name {
 font-size: 32px;
+text-transform: uppercase;
 }
 
 #colmar {
@@ -31,10 +36,116 @@ font-size: 32px;
 
 #academy {
   color: lightgrey;
+  font-weight: bold;
 }
 
 nav ul{
   list-style-type: none;
   display: inline-flex;
   padding-right: 24px;
+}
+
+/* Banner */
+
+.banner {
+  background-color: lightgrey;
+  display: flex;
+  width: 100%;
+}
+
+.banner-image {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+#banner-info {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.banner img {
+    width: 100%;
+
+}
+
+h1 {
+  font-size: 3rem;
+  color: grey;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.button {
+  padding: 8px 75px;
+  background-color: grey;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.button:hover {
+  color: grey;
+  background-color: white;
+}
+
+/* Practice Section */
+
+.practice-container {
+  width: 100%;
+  display: flex;
+}
+
+.practice-image-container {
+  width: 60%;
+    padding: 32px 24px;
+}
+
+#banner-image-file-info {
+  width: 100%;
+}
+
+.practice-info-container {
+  width: 40%;
+    padding: 32px 24px;
+}
+
+.practice-info {
+  border: 1px lightgrey solid;
+  display: flex;
+  margin-bottom: 1px;
+}
+
+.practice-info:hover {
+  background-color: lightgrey;
+  color: white;
+}
+
+.practice-info-image {
+  width: 35%;
+  margin: 16px 16px;
+}
+
+.practice-info-image img {
+  width: 100%;
+}
+
+
+.practice-info-text {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.practice-info-text h2, span {
+  padding-bottom: 8px;
 }
