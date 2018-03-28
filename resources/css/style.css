@@ -1,14 +1,15 @@
 html {
 font-size: 16px;
-font-family: "Helvetica", sans-serif;
+font-family: "Open Sans", "Helvetica", sans-serif;
 line-height: 1.4;
 }
 
 /* Header */
 
 header {
-  height: 64px;
+  height: 4rem;
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -18,15 +19,15 @@ header {
 }
 
 .logo-file {
-  padding-left: 24px;
+  padding-left: 1.5rem;
 }
 
 .logo-file img {
-  height: 50px;
+  height: 3.125rem;
 }
 
 #company-name {
-font-size: 32px;
+font-size: 2rem;
 text-transform: uppercase;
 }
 
@@ -42,28 +43,84 @@ text-transform: uppercase;
 nav ul{
   list-style-type: none;
   display: inline-flex;
-  padding-right: 24px;
+  padding-right: 1.5rem;
+}
+
+nav li {
+  padding-right: 1rem;
+}
+
+@media only screen and (min-width: 501px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .mobile-menu li {
+    list-style-type: none;
+    display: inline-flex;
+    padding-right: 1.5rem;
+  }
+
+  .mobile-menu {
+    width: 100%;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  #company-name {
+    display: none;
+  }
 }
 
 /* Banner */
 
 .banner {
-  background-color: lightgrey;
+  background-color: #E8EAEB;
   display: flex;
   width: 100%;
 }
 
 .banner-image {
   width: 60%;
-  padding: 32px 24px;
+  padding: 2rem 1.5rem;
 }
 
 #banner-info {
   display: inline-flex;
   flex-direction: column;
-  align-items: center;
+
   justify-content: center;
   width: 40%;
+}
+ {
+
+ }
+#banner-heading {
+  color: #79999E;
+}
+
+#banner-h3 {
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .banner img {
@@ -73,28 +130,72 @@ nav ul{
 
 h1 {
   font-size: 3rem;
-  color: grey;
-  font-weight: bold;
-  padding-bottom: 20px;
+  color: #3F4F52;
+  font-weight: 800;
+  padding-bottom: 1.25rem;
+}
+
+@media only screen and (max-width: 975px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  #banner-h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 825px) {
+  h1 {
+    font-size: 2rem;
+  }
+  #banner-h3 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  h1 {
+    font-size: 1.5rem;
+      padding-bottom: 0.75rem;
+  }
+  #banner-h3 {
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 h2 {
   font-size: 2rem;
+  color: #2F4D52;
+  font-weight: 700;
+}
+
+h3 {
+  line-height: 1.4;
+
 }
 
 .button {
-  padding: 8px 75px;
+  padding: 0.5rem 4.6875rem;
   background-color: grey;
   color: white;
   font-size: 1.5rem;
-  margin-top: 20px;
+  margin-top: 1.25rem;
+  margin-right: 1rem;
   border-radius: 3px;
   font-weight: bold;
+  text-align: center;
+  width: auto;
 }
 
 .button:hover {
-  color: grey;
-  background-color: white;
+  color: white;
+  background-color: #79999E;
 }
 
 /* Practice Section */
@@ -106,7 +207,16 @@ h2 {
 
 .practice-image-container {
   width: 60%;
-    padding: 32px 24px;
+    padding: 2rem 1.5rem;
+}
+
+.practice-image-container h1 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.practice-image-container h3 {
+  padding-bottom: 2rem;
 }
 
 #banner-image-file-info {
@@ -115,13 +225,42 @@ h2 {
 
 .practice-info-container {
   width: 40%;
-    padding: 32px 24px;
+    padding: 2rem 1.5rem;
 }
 
 .practice-info {
   border: 1px lightgrey solid;
   display: flex;
   margin-bottom: 1px;
+}
+
+@media only screen and (max-width: 975px) {
+  .practice-info-text h2 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 825px) {
+  .practice-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .practice-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .practice-info-text h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .practice-info-text {
+    margin: 0.5rem 0.5rem;
+  }
 }
 
 .practice-info:hover {
@@ -131,7 +270,7 @@ h2 {
 
 .practice-info-image {
   width: 35%;
-  margin: 16px 16px;
+  margin: 1rem 1rem;
 }
 
 .practice-info-image img {
@@ -146,8 +285,12 @@ h2 {
   justify-content: center;
 }
 
-.practice-info-text h2, span {
-  padding-bottom: 8px;
+.practice-info-text h2 {
+  padding-bottom: 0.5rem;
+}
+
+.practice-info-text span {
+  padding-bottom: 0.5rem;
 }
 
 .quote {
@@ -158,7 +301,7 @@ h2 {
 
 .start-learning-container {
   width: 100%;
-  background-color: lightgrey;
+  background-color: #E8EAEB;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -167,6 +310,7 @@ h2 {
   display: block;
   text-align: center;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .courses-container {
@@ -182,22 +326,26 @@ justify-content: center;
   align-items: flex-start;
   background-color: white;
   width: 27%;
-  height: 20rem;
+  height: 22rem;
   margin-right: 2rem;
   margin-bottom: 2.5rem;
   transition: border 0.75s linear 0;
 }
 
 .individual-course-container:hover {
-  border: 1px solid lightblue;
-  box-shadow: 2px 2px 2px #888888;
+  background-color: lightgrey;
+  color: white;
 }
 
 .individual-course-container h2 {
   padding-top: 1rem;
 }
 
-.individual-course-container h2, span {
+.individual-course-container h2 {
+  padding-left: 1rem;
+}
+
+.individual-course-container span {
   padding-left: 1rem;
 }
 
@@ -242,6 +390,14 @@ video {
   width: 100%;
 }
 
+@media only screen and (max-width: 825px) {
+  .thesis-exhibit-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .thesis-classes-container {
   width: 40%;
   padding-right: 2rem;
@@ -249,11 +405,21 @@ video {
 
 .thesis-image-container {
   width: 35%;
-    margin: 16px 16px;
+  margin: 1rem 1rem;
 }
+
 .thesis-image-container img {
   width: 100%;
   height: auto;
+}
+
+.thesis-exhibit-container h2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.thesis-exhibit-container h3 {
+  padding-bottom: 2rem;
 }
 
 /* Footer */
@@ -269,4 +435,8 @@ footer {
 .copyright {
   display: flex;
   flex-grow: 1;
+}
+
+li:hover {
+  color: grey;
 }
