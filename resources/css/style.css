@@ -166,7 +166,7 @@ h2 {
 .heading {
   display: block;
   text-align: center;
-  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .courses-container {
@@ -220,14 +220,21 @@ justify-content: center;
 .thesis-exhibit-container {
   width: 100%;
   display: flex;
+  padding-top: 2rem;
 }
 
 .thesis-info-container {
   width: 60%;
+  margin-left: 1.5rem;
+}
+
+.thesis-info-container h2 {
+  padding-bottom: 0.5rem;
 }
 
 .thesis-video-container {
-  padding: 32px 24px 24px 24px;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 video {
@@ -237,6 +244,7 @@ video {
 
 .thesis-classes-container {
   width: 40%;
+  padding-right: 2rem;
 }
 
 .thesis-image-container {
@@ -246,4 +254,19 @@ video {
 .thesis-image-container img {
   width: 100%;
   height: auto;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  padding: 1rem 1.5rem;
+  border-top: solid 1px lightgrey;
+  height: 5rem;
+  margin-top: 2rem;
+}
+
+.copyright {
+  display: flex;
+  flex-grow: 1;
 }
