@@ -50,6 +50,30 @@ nav li {
   padding-right: 1rem;
 }
 
+@media only screen and (max-width: 825px) {
+  #company-name {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #company-name {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  header nav li {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 565px) {
+  #company-name {
+    font-size: 0.75rem;
+  }
+}
+
 @media only screen and (min-width: 501px) {
   .mobile-menu {
     display: none;
@@ -98,6 +122,14 @@ nav li {
   width: 100%;
 }
 
+@media only screen and (max-width: 500px) {
+  .banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .banner-image {
   width: 60%;
   padding: 2rem 1.5rem;
@@ -106,13 +138,21 @@ nav li {
 #banner-info {
   display: inline-flex;
   flex-direction: column;
-
   justify-content: center;
   width: 40%;
 }
- {
 
- }
+@media only screen and (max-width: 500px) {
+  #banner-info {
+    width: 100%;
+  }
+
+  .banner-image {
+    width: 100%;
+    padding: 0 0 2rem 0;
+  }
+}
+
 #banner-heading {
   color: #79999E;
 }
@@ -198,6 +238,25 @@ h3 {
   background-color: #79999E;
 }
 
+@media only screen and (max-width: 500px) {
+  .button {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    width: auto;
+  }
+
+  #banner-heading {
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
+
+  #banner-h3 {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 /* Practice Section */
 
 .practice-container {
@@ -277,6 +336,11 @@ h3 {
   width: 100%;
 }
 
+@media only screen and (min-width: 501px) {
+.mobile-image {
+  display: none;
+}
+}
 
 .practice-info-text {
   width: 65%;
@@ -297,6 +361,46 @@ h3 {
   font-size: 0.8rem;
 }
 
+@media only screen and (max-width: 500px) {
+  .practice-image-container {
+    display: none;
+  }
+
+  .practice-info-container {
+    width: 100%;
+
+  }
+
+  .practice-info {
+    display: flex;
+    flex-direction: column;
+    border: 0px white solid;
+    margin-bottom: 4rem;
+  }
+
+  .practice-info-text {
+    width: 100%;
+  }
+
+  .practice-info:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .practice-info-image {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+
+  }
+}
+
 /* Start Learning Section */
 
 .start-learning-container {
@@ -304,6 +408,7 @@ h3 {
   background-color: #E8EAEB;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  height: auto;
 }
 
 .heading {
@@ -320,6 +425,7 @@ width: 100%;
 justify-content: center;
 }
 
+
 .individual-course-container {
   display: flex;
   flex-direction: column;
@@ -331,6 +437,51 @@ justify-content: center;
   margin-bottom: 2.5rem;
   transition: border 0.75s linear 0;
 }
+
+@media only screen and (max-width: 840px) {
+  .individual-course-container {
+    height: auto;
+    width: 45%;
+  }
+
+  .individual-course-container span {
+    padding-right: 1rem;
+  }
+
+  .individual-course-container h2 {
+    padding-right: 1rem;
+  }
+}
+
+@media only screen and (min-width: 501px){
+.start-learning-mobile {
+  display: none;
+}
+
+}
+
+@media only screen and (max-width: 500px) {
+  .individual-course-container {
+    display: none;
+  }
+
+  .start-learning-mobile h2 {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: lightgrey;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .start-learning-container {
+    background-color: white;
+  }
+}
+
+
 
 .individual-course-container:hover {
   background-color: lightgrey;
@@ -390,6 +541,24 @@ video {
   width: 100%;
 }
 
+@media only screen and (max-width: 500px) {
+  .thesis-info-container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.thesis-video-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.thesis-info-container h2, .thesis-info-container h3 {
+  display: none;
+}
+ }
+
 @media only screen and (max-width: 825px) {
   .thesis-exhibit-container {
     display: flex;
@@ -420,6 +589,12 @@ video {
 
 .thesis-exhibit-container h3 {
   padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .thesis-classes-container {
+    display: none;
+  }
 }
 
 /* Footer */

@@ -19,7 +19,7 @@
       <div id="company-name"><span id="colmar">Colmar</span> <span id="academy">Academy</span></div>
     </div>
       <nav>
-        <ul>
+        <ul role="presentation">
           <li>On campus</li>
           <li>Online</li>
           <li>For companies</li>
@@ -27,8 +27,8 @@
         </ul>
       </nav>
         <div class="mobile-menu">
-  <ul>
-        <li><img src="file:///C:/Users/jule/colmar/resources/images/ic-logo.svg" alt="Colmar Logo"></li>  
+  <ul role="presentation">
+        <li><img src="file:///C:/Users/jule/colmar/resources/images/ic-logo.svg" alt="Colmar Logo"></li>
             <li><i class="fa fa-pencil fa-lg"></i></li>
             <li><i class="fa fa-desktop fa-lg"></i></li>
             <li><i class="fa fa-user fa-lg"></i></li>
@@ -62,7 +62,8 @@
     <div class="practice-info-container">
       <div class="practice-info">
         <div class="practice-info-image">
-        <img src="./resources/images/information-orientation.jpg" alt="Orientation">
+        <img class="desktop-image" src="./resources/images/information-orientation.jpg" alt="Orientation">
+        <img class="mobile-image" src="./resources/images/information-orientation-mobile.jpg" alt="Orientation">
       </div>
         <div class="practice-info-text">
         <h2>Orientation Date</h2>
@@ -72,7 +73,8 @@
       </div>
       <div class="practice-info">
         <div class="practice-info-image">
-        <img src="./resources/images/information-campus.jpg" alt="Campus Information">
+        <img class="desktop-image" src="./resources/images/information-campus.jpg" alt="Campus Information">
+        <img class="mobile-image" src="./resources/images/information-campus-mobile.jpg" alt="Campus Information">
       </div>
         <div class="practice-info-text">
           <h2>Our Campus</h2>
@@ -82,7 +84,8 @@
       </div>
       <div class="practice-info">
         <div class="practice-info-image">
-        <img src="./resources/images/information-guest-lecture.jpg" alt="Guest Lecture">
+        <img class="desktop-image" src="./resources/images/information-guest-lecture.jpg" alt="Guest Lecture Speaker">
+        <img class="mobile-image" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Guest Lecture Speaker">
       </div>
         <div class="practice-info-text">
         <h2>Our Guest Lecture</h2>
@@ -104,39 +107,46 @@
         <img class="course-image" src="./resources/images/course-software.jpg" alt="Software Engineering">
           <h2>Software Engineering</h2>
           <span class="courses">Courses</span>
-          <span class="course-info">Web Development, Mobile Development, iOT, APIs</span>
+          <span class="course-info" aria-label="course information">Web Development, Mobile Development, iOT, APIs</span>
       </div>
       <div class="individual-course-container">
         <img class="course-image" src="./resources/images/course-computer-art.jpg" alt="Computer Art">
         <h2>Computer Art</h2>
         <span class="courses">Courses</span>
-        <span class="course-info">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</span>
+        <span class="course-info" aria-label="course information">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</span>
       </div>
       <div class="individual-course-container">
         <img class="course-image" src="./resources/images/course-design.jpg" alt="Design">
         <h2>Design</h2>
         <span class="courses">Courses</span>
-        <span class="course-info">User Experience Design, User Research, Visual Design</span>
+        <span class="course-info" aria-label="course information">User Experience Design, User Research, Visual Design</span>
       </div>
       <div class="individual-course-container">
         <img class="course-image" src="./resources/images/course-data.jpg" alt="Data">
         <h2>Data</h2>
         <span class="courses">Courses</span>
-        <span class="course-info">Data Science, Big Data, SQL, Data Visualization</span>
+        <span class="course-info" aria-label="course information">Data Science, Big Data, SQL, Data Visualization</span>
       </div>
       <div class="individual-course-container">
         <img class="course-image" src="./resources/images/course-business.jpg" alt="Business">
         <h2>Business</h2>
         <span class="courses">Courses</span>
-        <span class="course-info">Product Development, Business Development, Startup</span>
+        <span class="course-info" aria-label="course information">Product Development, Business Development, Startup</span>
       </div>
       <div class="individual-course-container">
         <img class="course-image" src="./resources/images/course-marketing.jpg" alt="Marketing">
         <h2>Marketing</h2>
         <span class="courses">Courses</span>
-        <span class="course-info">Analytics, Content Marketing, Mobile Marketing</span>
+        <span class="course-info" aria-label="course information">Analytics, Content Marketing, Mobile Marketing</span>
       </div>
-
+      </div>
+      <div class="start-learning-mobile">
+        <h2>Software Engineering</h2>
+        <h2>Computer Art</h2>
+        <h2>Design</h2>
+        <h2>Data</h2>
+        <h2>Business</h2>
+        <h2>Marketing</h2>
       </div>
     </div>
 
@@ -184,7 +194,7 @@
 </div>
 <div class="terms-privacy">
   <nav>
-    <ul>
+    <ul role="presentation">
       <li>Terms</li>
       <li>Privacy</li>
       <li> <i class="fa fa-facebook"></i></li>
